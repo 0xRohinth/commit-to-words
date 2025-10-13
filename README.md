@@ -90,6 +90,7 @@ node scripts/build.js
 ```
 npm init -y 
 npm install gray-matter marked
+npm install -D @tailwindcss/typography
 ```
 
 ### 3️⃣ Add Your Posts
