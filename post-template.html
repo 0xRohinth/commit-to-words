@@ -13,14 +13,51 @@
         tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'], }, } } }
     </script>
     <style>
-        /* Your existing scrollbar styles */ ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #1f2937; /* dark:bg-gray-800 */ } .light ::-webkit-scrollbar-track { background: #f3f4f6; /* light:bg-gray-100 */ } ::-webkit-scrollbar-thumb { background: #4b5563; /* dark:bg-gray-600 */ border-radius: 10px; } .light ::-webkit-scrollbar-thumb { background: #9ca3af; /* light:bg-gray-400 */ }
+        /* Your existing scrollbar styles */
+.post-content {
+  font-family: system-ui, sans-serif;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #333;
+}
+.dark .post-content {
+  color: #ddd;
+}
+.post-content h1, .post-content h2, .post-content h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.post-content pre, .post-content code {
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+}
+.post-content pre {
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+}
+.post-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1.2em 0;
+}
+.post-content blockquote {
+  border-left: 4px solid #6366f1;
+  padding-left: 1em;
+  color: #4b5563;
+  font-style: italic;
+}
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #1f2937; /* dark:bg-gray-800 */ } .light ::-webkit-scrollbar-track { background: #f3f4f6; /* light:bg-gray-100 */ } ::-webkit-scrollbar-thumb { background: #4b5563; /* dark:bg-gray-600 */ border-radius: 10px; } .light ::-webkit-scrollbar-thumb { background: #9ca3af; /* light:bg-gray-400 */ }
     </style>
 </head>
 
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans transition-colors duration-300">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <!-- Header -->
-        <header class="flex justify-between items-center py-6 border-b border-gray-200 dark:border-gray-700"> <a href="/" class="text-2xl font-bold text-gray-900 dark:text-white">John Doe</a>
+        <header class="flex justify-between items-center py-6 border-b border-gray-200 dark:border-gray-700"> <a href="/" class="text-2xl font-bold text-gray-900 dark:text-white">0xRohinth</a>
             <nav class="hidden md:flex items-center space-x-6"> <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Home</a> </nav>
             <button id="theme-toggle" class="p-2 rounded-md">
                 <svg id="theme-icon-dark" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,14 +69,16 @@
             </button>
         </header>
         <main class="py-12">
-            <article class="prose dark:prose-invert lg:prose-xl mx-auto">
-                <header class="mb-8 text-center border-b dark:border-gray-700 pb-4">
+            <article class="mx-auto max-w-3xl">
+            <header class="mb-8 text-center border-b dark:border-gray-700 pb-4">
                     <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white"><!-- POST_TITLE --></h1>
                     <p class="text-lg text-gray-500 dark:text-gray-400 mt-2">
                         <!-- POST_DATE -->
                     </p>
                 </header>
-                <!-- POST_CONTENT -->
+                <div class="post-content">
+                    <!-- POST_CONTENT -->
+                </div>
             </article>
         </main>
     </div>
