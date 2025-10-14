@@ -56,7 +56,7 @@ image: "https://picsum.photos/800/400"
 tags: ["project", "update", "blog"]
 ---
 
-Welcome to my **first blog post**!  
+# Welcome to my **first blog post**!  
 This site is powered by a custom static generator built with Node.js and TailwindCSS.
 
 ```
