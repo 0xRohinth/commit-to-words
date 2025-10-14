@@ -82,7 +82,7 @@ node scripts/build.js
 ## ⚙️ Installation & Setup  
 ### 1️⃣ Clone the Repository  
 ```bash
- git clone https://github.com/0xRohinth/commit-to-word.git cd blog-site
+ git clone https://github.com/0xRohinth/commit-to-word.git cd commit-to-word
 ```
 
 ### 2️⃣ Install Dependencies
