@@ -39,4 +39,4 @@ You can easily modify your post-template to include:
 ## ✅ Conclusion
 
 That’s it!  
-You just write Markdown files and run:
+You just write Markdown files
