@@ -102,7 +102,7 @@ summary: "Comprehensive walkthrough of Lame from HackTheBox, exploiting Samba CV
 
 ```bash
 nmap -sC -sV 10.10.10.3
-```
+
 
 > [!NOTE]
 > Key Findings: Samba 3.0.20 is vulnerable to CVE-2007-2447.
